@@ -26,3 +26,12 @@ Problem Solving Phase:
     - Paper === Paper
     - Rock === Rock
     - Scissor === Scissor
+
+Subproblems:
+
+- Store user input in a variable
+- Randomly chose one of three options...
+  - Math.random function
+  - Function that takes a number (1-3) and equals it to a string(RPS)
+  - Store result in a variable
+- Function that compares the user choice and the computer choice and returns who won based on RPS Game Logic.
