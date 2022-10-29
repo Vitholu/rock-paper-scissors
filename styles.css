@@ -66,3 +66,16 @@ h1 {
 	cursor: pointer;
 	background-color: rgba(250, 25, 83, 0.6);
 }
+
+.display-results {
+	display: flex;
+	align-items: center;
+	width: 782px;
+	margin-top: 2rem;
+	height: 30px;
+	border: 1px solid #f74b4a;
+}
+
+p {
+	margin-left: 10px;
+}

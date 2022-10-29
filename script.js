@@ -1,4 +1,8 @@
 const userClick = document.querySelectorAll('button');
+const querySelectorDiv = document.querySelector('.display-results');
+
+const pContainer = document.createElement('p');
+querySelectorDiv.appendChild(pContainer);
 
 function userChoice() {
 	userClick.forEach((e) => {
@@ -29,23 +33,23 @@ function rpsWinner(user, computer) {
 	computer = computerChoice();
 	if (user === 'Rock' && computer != 'Paper') {
 		if (user === computer) {
-			alert('Draw');
+			pContainer.textContent = 'Draw';
 		}
-		alert('You Won! ' + 'Computer choice was: ' + computer);
+		pContainer.textContent = 'You Won! ' + 'Computer choice was: ' + computer;
 	}
 	if (user === 'Paper' && computer != 'Scissor') {
 		if (user === computer) {
-			alert('Draw');
+			pContainer.textContent = 'Draw';
 		}
-		alert('You Won! ' + 'Computer choice was: ' + computer);
+		pContainer.textContent = 'You Won! ' + 'Computer choice was: ' + computer;
 	}
 	if (user === 'Scissor' && computer != 'Rock') {
 		if (user === computer) {
-			alert('Draw');
+			pContainer.textContent = 'Draw';
 		}
-		alert('You Won! ' + 'Computer choice was: ' + computer);
+		pContainer.textContent = 'You Won! ' + 'Computer choice was: ' + computer;
 	} else {
-		alert('You Lose! ' + 'Computer choice was: ' + computer);
+		pContainer.textContent = 'You Lose! ' + 'Computer choice was: ' + computer;
 	}
 	return userChoice();
 }
