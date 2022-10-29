@@ -1,3 +1,5 @@
+const userClick = document.querySelectorAll('button');
+
 function userChoice(choice) {
 	return choice;
 }

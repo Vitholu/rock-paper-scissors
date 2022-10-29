@@ -5,7 +5,8 @@
 
 img {
 	width: 200px;
-	height: auto;
+	height: 200px;
+	padding: 15px;
 }
 
 .container {
@@ -32,7 +33,7 @@ h1 {
 .rock,
 .paper,
 .scissor {
-	/* background-color: blue; */
+	border-radius: 140px;
 	border: 2px solid red;
 }
 
@@ -43,6 +44,7 @@ h1 {
 	align-self: flex-start;
 	margin-top: 140px;
 	cursor: pointer;
+	background-color: rgba(35, 195, 250, 0.6);
 }
 
 .paper {
@@ -50,8 +52,9 @@ h1 {
 	align-items: center;
 	justify-content: center;
 	align-self: flex-start;
-	margin-top: 240px;
+	margin-top: 320px;
 	cursor: pointer;
+	background-color: rgba(250, 234, 0, 0.6);
 }
 
 .scissor {
@@ -61,4 +64,5 @@ h1 {
 	align-self: flex-start;
 	margin-top: 140px;
 	cursor: pointer;
+	background-color: rgba(250, 25, 83, 0.6);
 }
