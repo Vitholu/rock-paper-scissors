@@ -4,13 +4,11 @@ const querySelectorDiv = document.querySelector('.display-results');
 const pContainer = document.createElement('p');
 querySelectorDiv.appendChild(pContainer);
 
-function userChoice() {
-	userClick.forEach((e) => {
-		e.addEventListener('click', (e) => {
-			return rpsWinner(e);
-		});
+userClick.forEach((e) => {
+	e.addEventListener('click', (e) => {
+		return rpsWinner(e);
 	});
-}
+});
 
 function computerChoice() {
 	let randomNumber = Math.floor(Math.random() * 3) + 1;
@@ -51,7 +49,4 @@ function rpsWinner(user, computer) {
 	} else {
 		pContainer.textContent = 'You Lose! ' + 'Computer choice was: ' + computer;
 	}
-	return userChoice();
 }
-
-userChoice();
