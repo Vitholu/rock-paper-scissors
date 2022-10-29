@@ -1,7 +1,11 @@
 const userClick = document.querySelectorAll('button');
 
-function userChoice(choice) {
-	return choice;
+function userChoice() {
+	userClick.forEach((e) => {
+		e.addEventListener('click', (e) => {
+			return rpsWinner(e);
+		});
+	});
 }
 
 function computerChoice() {
@@ -22,28 +26,28 @@ function computerChoice() {
 }
 
 function rpsWinner(user, computer) {
-	user = userChoice('Rock');
 	computer = computerChoice();
 	if (user === 'Rock' && computer != 'Paper') {
 		if (user === computer) {
-			return alert('Draw');
+			alert('Draw');
 		}
-		return alert('You Won! ' + 'Computer choice was: ' + computer);
+		alert('You Won! ' + 'Computer choice was: ' + computer);
 	}
 	if (user === 'Paper' && computer != 'Scissor') {
 		if (user === computer) {
-			return alert('Draw');
+			alert('Draw');
 		}
-		return alert('You Won! ' + 'Computer choice was: ' + computer);
+		alert('You Won! ' + 'Computer choice was: ' + computer);
 	}
 	if (user === 'Scissor' && computer != 'Rock') {
 		if (user === computer) {
-			return alert('Draw');
+			alert('Draw');
 		}
-		return alert('You Won! ' + 'Computer choice was: ' + computer);
+		alert('You Won! ' + 'Computer choice was: ' + computer);
 	} else {
-		return alert('You Lose! ' + 'Computer choice was: ' + computer);
+		alert('You Lose! ' + 'Computer choice was: ' + computer);
 	}
-
-	return console.log('Thanks for playing');
+	return userChoice();
 }
+
+userChoice();
